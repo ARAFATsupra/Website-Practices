@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lab Test 1</title>
+<style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 5px;
+  border-style: solid;
+}
+</style>
+</head>
+<body>
+    <table style="width: 100%">
+        <caption>Table with Row and Column Span</caption>
+        <tr>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td rowspan="4">Value</td>
+            <td>Value 1</td>
+            <td>Value 2</td>
+            <td>Value 3</td>
+            <td>Value 4</td>
+            <td>Value 5</td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Column 1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Column 2</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="6"></td>
+        </tr>
+    </table>
+    <br><br>
+    <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="sname">Second Name:</label>
+        <input type="text" id="sname" name="sname"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <br>
+        <label for="course">Course:</label>
+        <input type="radio" id="cse" name="course" value="CSE">
+        <label for="cse">CSE</label>
+        <input type="radio" id="icte" name="course" value="ICTE">
+        <label for="icte">ICTE</label>
+        <input type="radio" id="eee" name="course" value="EEE">
+        <label for="eee">EEE</label>
+        <input type="radio" id="swe" name="course" value="SWE">
+        <label for="swe">SWE</label>
+        <input type="radio" id="coe" name="course" value="CoE">
+        <label for="coe">CoE</label>
+        <input type="radio" id="ece" name="course" value="ECE">
+        <label for="ece">ECE</label>
+        <br>
+        <br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <br>
+        <br>
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phn" name="phone" value="+880"><br><br>
+        <label for="address">Address:</label><br>
+        <input type="textarea" id="address" name="address"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="fname" name="fname" value="email"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="pwd" id="pwd" name="password" value="***"><br><br>
+        <label for="password">Re-type Password:</label><br>
+        <input type="pwd" id="pwd" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

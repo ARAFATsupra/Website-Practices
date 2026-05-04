@@ -1,0 +1,268 @@
+/* Body,paragraph,h1,h2,h3 Styling */
+body {
+    background: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    animation: fade_in 0.5s ease-in-out;
+}
+
+@keyframes fade_in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    padding: 15px;
+    margin: 0;
+    font-size: 32px;
+}
+
+h2 {
+    color: black;
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px lightgray;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px lightgray;
+    text-align: center;
+}
+
+/* Registration Form Styling */
+#form1 {
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 5px inset darkgray;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+    animation: slide_up 0.5s ease-in-out;
+}
+
+@keyframes slide_up {
+  from  { transform: translateY(100px); opacity: 0; }
+  to  { transform: translateY(0px); opacity: 1; }
+}
+
+#form1 label {
+    font-size: 18px;
+    display: inline-block;
+    width: 140px;
+    text-align: left;
+    margin: 5px;
+}
+
+#form1 input[type="text"],
+#form1 input[type="number"],
+#form1 input[type="password"],
+#form1 input[type="email"],
+#form1 input[type="date"],
+#form1 select {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#form1 input:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: scale(1.00);
+    transition: all 0.5s ease;
+}
+
+#form1 input[type="submit"],
+#form1 input[type="reset"],
+#form1 button[type="submit"],
+#form1 button[type="reset"] {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form1 input[type="submit"]:hover,
+#form1 input[type="reset"]:hover,
+#form1 button[type="submit"]:hover,
+#form1 button[type="reset"]:hover {
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: scale(1.08);
+}
+
+/* Login Form Styling*/
+#form2 {
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 5px inset darkgray;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+    animation: slide_up 0.5s ease-in-out;
+}
+
+@keyframes slide_up {
+  from  { transform: translateY(100px); opacity: 0; }
+  to  { transform: translateY(0px); opacity: 1; }
+}
+
+#form2 label {
+    font-size: 18px;
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    margin: 5px;
+}
+
+#form2 input[type="email"],
+#form2 input[type="password"],
+#form2 select {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#form2 input:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: scale(1.00);
+    transition: all 0.5s ease;
+}
+
+#form2 input[type="submit"],
+#form2 input[type="reset"],
+#form2 button[type="submit"],
+#form2 button[type="reset"] {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form2 input[type="submit"]:hover,
+#form2 input[type="reset"]:hover,
+#form2 button[type="submit"]:hover,
+#form2 button[type="reset"]:hover {
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: scale(1.08);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Navigation Bar Styling */
+ul {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-shadow: 1px 1px 1px black;
+}
+
+li {
+    margin: 0;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+li a:hover {
+    background-color: gray;
+    transform: scale(1.10);
+}
+
+/* Button styling for all the buttons */
+.blue-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.blue-button:hover {
+    background-color: gray;
+}
+
+/* Table Styling */
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 100, 0.2);
+    animation: fade_in 0.5s ease-in-out;
+}
+
+table th, table td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+}
+
+table th {
+    background-color: black;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: white;
+}
+
+table tr:hover {
+    background-color: lightgray;
+}

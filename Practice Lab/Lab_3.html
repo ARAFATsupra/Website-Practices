@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Practice</title>
+<!--Table Styling-->
+<style>
+    table, th, td {
+  border: 2px solid blue;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 5px;
+  border-style: solid;
+}
+</style>
+</head>
+<body>
+    <!--Table Create-->
+    <table style="width: 50%;">
+        <colgroup>
+    <col span="5" style="background-color: skyblue">
+        </colgroup>
+        <caption>Student Information</caption>
+        <tr>
+            <th>Name</th>
+            <th>StudentID</th>
+            <th>Village & Home</th>
+            <th>CGPA</th>
+            <th>Birthday</th>
+        </tr>
+        <tr>
+            <td>Arafat</td>
+            <td>008</td>
+            <td>Magura & Puran Dhaka</td>
+            <td>0.00</td>
+            <td>18th December</td>
+        </tr>
+        <tr>
+            <td>Sakib</td>
+            <td>139</td>
+            <td>Puran Dhaka</td>
+            <td>3.00</td>
+            <td>20th December</td>
+        </tr>
+    </table>
+    <br>
+    <!--Task: Write the codes for the given table-->
+    <table>
+        <caption>Table Practice</caption>
+        <tr>
+            <th>Col 1</th>
+            <th>Col 2</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+        <tr>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 4</td>
+            <td rowspan="2">Cell 5</td>
+        </tr>
+        <tr>
+            <td>Cell 6</td>
+        </tr>
+    </table>
+    <br>
+    <!--Test rowspan & colspan in table-->
+    <br>
+    <table style="width: 50%;">
+        <caption>Student Information</caption>
+        <tr>
+            <th colspan="2">Name & StudentID</th>
+            <th>Village & Home</th>
+            <th>CGPA</th>
+            <th>Birthday</th>
+        </tr>
+        <tr>
+            <td>Arafat</td>
+            <td>008</td>
+            <td>Magura & Puran Dhaka</td>
+            <td>0.00</td>
+            <td>18th December</td>
+        </tr>
+        <tr>
+            <td>Sakib</td>
+            <td>139</td>
+            <td>Puran Dhaka</td>
+            <td>3.00</td>
+            <td>18th December</td>
+        </tr>
+    </table>
+    <br>
+</body>
+</html>
